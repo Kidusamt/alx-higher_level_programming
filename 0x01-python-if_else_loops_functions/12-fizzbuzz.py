@@ -8,5 +8,5 @@ def fizzbuzz():
         elif (i % 3 and i % 5) == 0:
             print("FizzBuzz", end='')
         else:
-        print(f"{i}", end='')
-    print(end=' ')
+            print(f"{i}", end='')
+        print(end=' ')

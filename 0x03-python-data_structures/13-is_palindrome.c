@@ -82,10 +82,10 @@ int is_palindrome(listint_t **head)
     if (*head != NULL && (*head)->next != NULL)
     {
         while (fast != NULL && fast->next != NULL)
-OBOBOB        {
+        {
             fast = fast->next->next;
-OBOBOB            prev_slow = slow;
-OBOBOB            slow = slow->next;
+            prev_slow = slow;
+            slow = slow->next;
         }
 
         if (fast != NULL)
@@ -102,13 +102,13 @@ int is_palindrome(listint_t **head)
         if (middle != NULL)
         {
             prev_slow->next = middle;
-OBOBOB            middle->next = scn_half;
+            middle->next = scn_half;
         }
-OBOBOB        else
-OBOBOB        {
+        else
+        {
             prev_slow->next = scn_half;
         }
-OBOBOB    }
+    }
 
     return (isp);
 }

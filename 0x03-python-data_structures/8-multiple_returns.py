@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-def max_integer(my_list=[]):
-            return (min(my_list, key=lambda i: -i)) if my_list else None
+def multiple_returns(sentence):
+    total = len(sentence)
+    char = sentence[0] if total > 0 else "None"
+    new = total, char
+    return(new)
